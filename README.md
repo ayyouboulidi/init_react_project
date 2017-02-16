@@ -201,11 +201,72 @@ Task runners are a set of tools to make build operation clean and well documente
 There are multiples task runners that we can configure manually : _GruntJS_ _Webpack_ _GulpJS_ _CakeJS_ _BroccoliJS_ and many others...
 
 Unless you want to configure a complex one manually, Now **Create-react-app** and the **Angular2-cli** configure it for you so you don't need to loose time. (it's really a pain in the ass if you want to adapt it for a complex architecure)<br>
+
 _P.S: both CreateReactApp and Angular2CLI are using Webpack for the moment, but it can be changed at any moment._
 
 # First component
 
 Now you have an idea about all what surround react and what you need to know about its environment, let's create our first component.<br>
+
+Components let you split the UI into independent, reusable pieces, and think about each piece in isolation.
+
+a simple component is like that :
+
+```JSX
+import React, { Component } from 'react';
+
+export default class MyFirstComponent extends Component{
+  render(){
+    return(
+      <div>
+        This is my first component
+      </div>
+  );
+  }
+}
+```
+### Import/Export
+
+This component can be used wherever we want and whenever we want with a simple import as following :
+
+```JSX
+import MyFirstComponent from '_Relative_Path_To_Your_JS_File';
+```
+_Important : To use a component in another file, the class should be marked as **export**_
+
+And we can call it in our Render function like that :
+
+```JSX
+<MyFirstComponent/>;
+```
+_Important : The name of the component should be in **Capital Letter**._
+
+### Props
+
+You can pass parameters (called **Props**) from the parent to your component if you need to.
+
+```JSX
+<MyFirstComponent componentOrder="first"/>;
+```
+
+And access it in the component itself.
+
+```JSX
+export default class MyFirstComponent extends Component{
+  render(){
+    return(
+      <div>
+        This is my {this.props.componentOrder} component
+      </div>
+  );
+  }
+}
+```
+### State
+On going....
+
+### Component LifeCycle
+
 
 # Router
 
