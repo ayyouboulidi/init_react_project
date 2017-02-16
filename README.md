@@ -4,6 +4,8 @@ This Repo is a guide for the bigenners in React or for who want to start learnin
 This will be organized as the following:
 
 - [Requirements](#Requirements)
+- [React](#React)
+- [Virtual DOM](#Virtual DOM)
 - [Init a new project](#Init a new project)
 - [Transpiler](#Transpiler)
 - [Task runners](#Task runners)
@@ -18,6 +20,10 @@ This will be organized as the following:
 -A minumum knowledge of ES6 or ECMAScript2015 (for more information on [ES6][1] )
 
 -[JSX][7] is required.
+
+# React
+
+# Virtual DOM
 
 # Init a new project
 
