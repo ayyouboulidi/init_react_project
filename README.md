@@ -4,7 +4,7 @@ This Repo is a guide for the bigenners in React or for who want to start learnin
 This will be organized as the following:
 
 - [Requirements](#Requirements)
-- [React](#React)
+- [Introduction to React](#Introduction to React)
 - [Virtual DOM](#Virtual DOM)
 - [Init a new project](#Init a new project)
 - [Transpiler](#Transpiler)
@@ -21,7 +21,7 @@ This will be organized as the following:
 
 -[JSX][7] is required.
 
-# React
+# Introduction to React
 React is a great JS library to create UI. It is a library that you can add to an existing project or can create a new SPA from scratch.
 
 **But what makes ReactJS a great library?**
@@ -38,6 +38,39 @@ class Sum extends React.Component {
   }
 }
 ```
+
+- Components are the future of the web.
+React is based on components development. It gives you the hand to create your very basic component and integrate them in whatever component you want.
+
+_child component_
+```jsx
+import React from 'react';
+
+export class Title extends React.Component {
+  render() {
+    return (
+      <div>My_Title</div>
+    );
+  }
+}
+```
+
+_Parent component_
+```jsx
+import React from 'react';
+import Title from './Title'
+
+class Header extends React.Component {
+  render() {
+    return (
+      <header>
+        <Title />
+      </header>
+    );
+  }
+}
+```
+
 
 # Virtual DOM
 
