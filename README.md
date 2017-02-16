@@ -13,10 +13,11 @@ This will be organized as the following:
 
 # Requirements
 
--To start coding with react we need absolutly **Node** and **npm** installed on our laptop.
+-To start coding with react we need absolutly [node][5] and [npm][6] installed on our laptop.
 
 -A minumum knowledge of ES6 or ECMAScript2015 (for more information on [ES6][1] )
 
+-[JSX][7] is required.
 
 # Init a new project
 
@@ -36,3 +37,6 @@ The next step will be to learn how to handle **States** and learn **Observables*
 [2]: https://github.com/reactjs/redux "Redux"
 [3]: https://github.com/facebook/flux "Flux"
 [4]: https://github.com/ReactiveX/rxjs "RxJS"
+[5]: https://github.com/nodejs/node "node"
+[6]: https://github.com/npm/npm "npm"
+[7]: https://github.com/jsx/JSX "JSX"
