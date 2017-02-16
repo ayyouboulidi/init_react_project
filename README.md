@@ -1,6 +1,8 @@
 # Start with ReactJS
 This Repo is a guide for the bigenners in React or for who want to start learning React and build their first App.
 
+**_P.S : You can clone this repos for a basic project with rooters._**
+
 This will be organized as following:
 
 - [Requirements](#requirements)
