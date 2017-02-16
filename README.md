@@ -90,6 +90,9 @@ For more details about how React build their Virtual DOM I recommend this Articl
 
 # Init a new project
 
+Hallelujah!<br>
+We donnot need to configure everything with react anymore. The **Create React App** is the solution.
+
 Create React App is divided into two packages:
 
 * `create-react-app` is a global command-line utility that you use to create new projects.
@@ -103,7 +106,7 @@ To update an existing project to a new version of `react-scripts`, [open the cha
 
 In most cases bumping the `react-scripts` version in `package.json` and running `npm install` in this folder should be enough, but it’s good to consult the [changelog](https://github.com/facebookincubator/create-react-app/blob/master/CHANGELOG.md) for potential breaking changes.
 
-To resume to create a new app you should execute the following commands :
+WELL, to create a new app you should execute the following commands :
 
 ```
 npm install -g create-react-app
@@ -129,22 +132,6 @@ my-app/
     index.js
     logo.svg
 ```
-
-For the project to build, **these files must exist with exact filenames**:
-
-* `public/index.html` is the page template;
-* `src/index.js` is the JavaScript entry point.
-
-You can delete or rename the other files.
-
-You may create subdirectories inside `src`. For faster rebuilds, only files inside `src` are processed by Webpack.<br>
-You need to **put any JS and CSS files inside `src`**, or Webpack won’t see them.
-
-Only files inside `public` can be used from `public/index.html`.<br>
-Read instructions below for using assets from JavaScript and HTML.
-
-You can, however, create more top-level directories.<br>
-They will not be included in the production build so you can use them for things like documentation.
 
 ### _Available Scripts_
 
@@ -179,6 +166,8 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+For more details please reffer to [Official Doc][https://github.com/facebookincubator/create-react-app/blob/master/README.md]
 
 # Transpiler
 
