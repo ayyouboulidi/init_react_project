@@ -21,7 +21,7 @@ This will be organized as following:
 
 -[JSX][7] is required.
 
-# Introduction to React
+### Introduction to React
 React is a great JS library to create UI. It is a library that you can add to an existing project or can create a new SPA from scratch.
 
 **But what makes ReactJS a great library?**
