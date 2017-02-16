@@ -17,11 +17,27 @@ This will be organized as the following:
 
 -To start coding with react we need absolutly [node][5] and [npm][6] installed on our laptop.
 
--A minumum knowledge of ES6 or ECMAScript2015 (for more information on [ES6][1] )
+-A minumum knowledge of ES6 (ECMAScript2015) (for more information on [ES6][1] )
 
 -[JSX][7] is required.
 
 # React
+React is a great JS library to create UI. It is a library that you can add to an existing project or can create a new SPA from scratch.
+
+**But what makes ReactJS a great library?**
+
+React makes wrinting JavaScript easier with the **JSX**, helps you mix HTML and JS in one file with ease and clearly.
+```
+import React from 'react';
+
+class Sum extends React.Component {
+  render() {
+    return (
+      <div>2+3 = {2+3}</div>
+    );
+  }
+}
+```
 
 # Virtual DOM
 
