@@ -1,10 +1,10 @@
 # Start with ReactJS
 This Repo is a guide for the bigenners in React or for who want to start learning React and build their first App.
 
-This will be organized as the following:
+This will be organized as following:
 
 - [Requirements](#Requirements)
-- [Introduction to React](#Introduction to React)
+- [Introduction to React](#Introduction-to-React)
 - [Virtual DOM](#Virtual DOM)
 - [Init a new project](#Init a new project)
 - [Transpiler](#Transpiler)
@@ -89,6 +89,12 @@ _Virtual DOM_ is the name React developers gave to their DOM manipulation engine
 For more details about how React build their Virtual DOM I recommend this Article [Diff Algorithm][8]
 
 # Init a new project
+
+To start a new project you can use the command : 
+
+```
+npm init
+```
 
 # Transpiler
 
