@@ -1,5 +1,5 @@
 # Start with ReactJS
-This Repo is a guide for the bigenners in React or for who want to start learning React and build their first App.
+This Repo is a guide for beginners in React or for whoever wants to start learning React and build their first App.
 
 **_P.S : You can clone this repos for a basic project with rooters._**
 
@@ -12,7 +12,7 @@ This will be organized as following:
 - [Transpiler](#transpiler)
 - [Task runners](#task-runners)
 - [First component](#first-component)
-- [Rooter](#rooter)
+- [Router](#router)
 - [What's next](#whats-next)
 
 # Requirements
@@ -207,7 +207,7 @@ _P.S: both CreateReactApp and Angular2CLI are using Webpack for the moment, but 
 
 Now you have an idea about all what surround react and what you need to know about its environment, let's create our first component.<br>
 
-# Rooter
+# Router
 
 # What's next
 
