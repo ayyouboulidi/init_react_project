@@ -171,6 +171,27 @@ For more details please reffer to [Official Doc](https://github.com/facebookincu
 
 # Transpiler
 
+Transpilers are tools that help transpile our code from ES6 to ES5 so the Browsers can support our code.<br>
+**Babel** is the most common transpiler that is used nowadays.<br>
+
+Before the _Create React App_ we used to configure it manually with a task runner as _Webpack_ or _Gulp_ or _Grunt_...<br>
+But not anymore, it's configure automatically (But we still have the hand over the automation so we can change the configuration as we want).
+
+#### Example
+
+```JSX
+[1,2,3].map(n => n + 1);
+```
+After the Babel transpilation (So the browser can understand it)
+
+```JSX
+"use strict";
+
+[1, 2, 3].map(function (n) {
+  return n + 1;
+});
+```
+
 # Task runners
 
 # First component
