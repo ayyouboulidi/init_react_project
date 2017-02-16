@@ -14,6 +14,7 @@ This will be organized as the following:
 # Requirements
 
 To start coding with react we need absolutly **Node** and **npm** installed on our laptop.
+
 A minumum knowledge of ES6 or ECMAScript2015 (for more information on [ES6][1] )
 
 
