@@ -27,7 +27,7 @@ React is a great JS library to create UI. It is a library that you can add to an
 **But what makes ReactJS a great library?**
 
 React makes wrinting JavaScript easier with the **JSX**, helps you mix HTML and JS in one file with ease and clearly.
-```
+```jsx
 import React from 'react';
 
 class Sum extends React.Component {
