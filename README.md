@@ -74,8 +74,19 @@ class Header extends React.Component {
 - React is very efficient with the Virtual DOM (Cf. Virtual DOM)
 
 - React is Awesome for SEO (Search Engine Optimization)
+One of the biggest issues with JavaScript frameworks is that they are not exactly search engine friendly. Although there have been some improvements in this area, search engines generally have trouble reading JavaScript-heavy applications.
+
+React stands out from the crowd because you can run React on the server, and the virtual DOM will be rendered and returned to the browser as a regular web page. No need for PhantomJS and other tricks!
 
 # Virtual DOM
+
+React creates its own virtual DOM where your components actually live. This approach gives you enormous flexibility and amazing gains in performance because React calculates what changes need to be made in the DOM beforehand and updates the DOM tree accordingly. This way, React avoids costly DOM operations and makes updates in a very efficient manner.
+
+There are other libraries of _DOM Manipulation_ as **EmberJS** and **Incremental DOM** that you can check. Those libraries focus on the performance and those three are the moste popular. In this article I will only talk about the Virtual DOM used by React.
+
+_Virtual DOM_ is the name React developers gave to their DOM manipulation engine. Virtual DOM provides a series of Javascript calls that tell the library how to build an **in-memory DOM** tree and how to update it when data bound to it changes. The central piece of Virtual DOM is its **smart diffing algorithm**: once the differences in the model have been mapped to the in-memory copy of the DOM, the algorithm finds the **minimum number of operations required to update the real DOM**. This results in two copies of the in-memory DOM being present during the diffing process.
+
+For more details about how React build their Virtual DOM I recommend this Article [Diff Algorithm][8]
 
 # Init a new project
 
@@ -98,3 +109,4 @@ The next step will be to learn how to handle **States** and learn **Observables*
 [5]: https://github.com/nodejs/node "node"
 [6]: https://github.com/npm/npm "npm"
 [7]: https://github.com/jsx/JSX "JSX"
+[8]: https://calendar.perfplanet.com/2013/diff/ "Diff Algorithm"
