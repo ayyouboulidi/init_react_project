@@ -194,7 +194,16 @@ After the Babel transpilation (So the browser can understand it)
 
 # Task runners
 
+Task runners are a set of tools to make build operation clean and well documented. They provide helpers to manage operations on the project file system via the command line.
+
+There are multiples task runners that we can configure manually : _GruntJS_ _Webpack_ _GulpJS_ _CakeJS_ _BroccoliJS_ and many others...
+
+Unless you want to configure a complex one manually, Now **Create-react-app** and the **Angular2-cli** configure it for you so you don't need to loose time. (it's really a pain in the ass if you want to adapt it for a complex architecure)<br>
+_P.S: both CreateReactApp and Angular2CLI are using Webpack for the moment, but it can be changed at any moment._
+
 # First component
+
+Now you have an idea about all what surround react and what you need to know about its environment, let's create our first component.<br>
 
 # Rooter
 
