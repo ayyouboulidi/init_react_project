@@ -266,9 +266,11 @@ export default class MyFirstComponent extends Component{
 On going....
 
 ### Component LifeCycle
-
+On going....
 
 # Router
+
+On going....
 
 # What's next
 
