@@ -3,15 +3,15 @@ This Repo is a guide for the bigenners in React or for who want to start learnin
 
 This will be organized as following:
 
-- [Requirements](#Requirements)
-- [Introduction to React](#Introduction-to-React)
-- [Virtual DOM](#Virtual DOM)
-- [Init a new project](#Init a new project)
-- [Transpiler](#Transpiler)
-- [Task runners](#Task runners)
-- [First component](#First component)
-- [Rooter](#Rooter)
-- [What's next](#What's next)
+- [Requirements](#requirements)
+- [Introduction to React](#introduction-to-React)
+- [Virtual DOM](#virtual-dom)
+- [Init a new project](#init-a-new-project)
+- [Transpiler](#transpiler)
+- [Task runners](#task-runners)
+- [First component](#first-component)
+- [Rooter](#rooter)
+- [What's next](#whats-next)
 
 # Requirements
 
