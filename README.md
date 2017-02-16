@@ -71,6 +71,9 @@ class Header extends React.Component {
 }
 ```
 
+- React is very efficient with the Virtual DOM (Cf. Virtual DOM)
+
+- React is Awesome for SEO (Search Engine Optimization)
 
 # Virtual DOM
 
