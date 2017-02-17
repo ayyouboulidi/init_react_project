@@ -9,7 +9,7 @@ This will be organized as following:
 - [Introduction to React](#introduction-to-React)
 - [Virtual DOM](#virtual-dom)
 - [Init a new project](#init-a-new-project)
-* [Available Scripts](#available-scripts)
+  - [Available Scripts](#available-scripts)
 - [Transpiler](#transpiler)
 - [Task runners](#task-runners)
 - [First component](#first-component)
