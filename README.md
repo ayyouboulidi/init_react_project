@@ -437,10 +437,10 @@ setTimeout(() => {
 After the initial render, we will get a button which called **increment** and **0** because we have setted the value in the state to **0**.
 
 Only ```componentWillMount``` and ```componentDidMount``` will be logged in console since we didn't update anything yet.<br>
-  - We will see in our console in this order :  ```Component Will Mount!``` then ```Component Did Mount```.<br>
-  
+  - We will see in our console in this order :  ```Component Will Mount!``` then ```Component Did Mount!```.<br>
+
 When we click **INCREMENT** button, the update will occur and other lifecycle methods will be triggered.<br>
-  -  We will see in our console in this order :  ```Component Will RECEIVE PROPS!``` then ```Component WILL UPDATE``` then ```Component Did Update!```.<br>
+  -  We will see in our console in this order :  ```Component Will RECEIVE PROPS!``` then ```Component WILL UPDATE!``` then ```Component Did Update!```.<br>
 
 After ten seconds, the component will unmount and the last event will be logged in console.<br>
   - We will see in our console :  ```Component Will Unmount!``` .<br>
