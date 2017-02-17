@@ -9,14 +9,14 @@ This will be organized as following:
 - [Introduction to React](#introduction-to-React)
 - [Virtual DOM](#virtual-dom)
 - [Init a new project](#init-a-new-project)
--- [Available Scripts](#available-scripts)
+* [Available Scripts](#available-scripts)
 - [Transpiler](#transpiler)
 - [Task runners](#task-runners)
 - [First component](#first-component)
--- [Import/Export](#import-export)
--- [Props](#props)
--- [State](#state)
--- [Component LifeCycle](#component-lifecycle)
+* [Import&Export](#import&export)
+* [Props](#props)
+* [State](#state)
+* [Component LifeCycle](#component-lifecycle)
 - [Router](#router)
 - [What's next](#whats-next)
 
@@ -239,7 +239,7 @@ export default class MyFirstComponent extends Component{
   }
 }
 ```
-### Import/Export
+### Import&Export
 
 This component can be used wherever we want and whenever we want with a simple import as following :
 
