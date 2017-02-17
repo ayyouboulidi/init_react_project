@@ -331,6 +331,122 @@ _PS: You should keep in mind that setState is asynchronous and if you do not use
 ### Component LifeCycle
 Component LifeCycle is the component lifecyle. Wow, Very clear I know :).
 
+Each component in React has a life cycle, from the stage ```ComponentWillMount``` to ```ComponentWillUnmount```.<br>
+There are multiple methods that are implemented to handle the component lifecyle. The name of each one is really significant.<br>
+
+The ```componentWillMount``` is executed before rendering, on both server and client side.
+
+The ```componentDidMount``` is executed after first render only on the client side. This is where AJAX requests and DOM or state updates should occur. This method is also used for integration with other JavaScript frameworks and any functions with delayed execution like setTimeout or setInterval. We are using it to update the state so we can trigger the other lifecycle methods.
+
+The ```componentWillReceiveProps``` is invoked as soon as the props are updated before another render is called.
+
+The ```shouldComponentUpdate``` should return true or false value. This will determine if component will be updated or not. This is set to true by default. If you are sure that component doesn't need to render after state or props are updated, you can return false value.
+
+The ```componentWillUpdate``` is called just before rendering.
+
+The ```componentDidUpdate``` is called just after rendering.
+
+The ```componentWillUnmount``` is called after the component is unmounted from the dom.
+
+Using an example will be more clear.<br>
+In our example we are setting initial state in constructor function. The setNewnumber is used to update the state. All the lifecycle methods are inside Content component.
+
+
+App.js
+```JSX
+import React from 'react';
+
+class App extends React.Component {
+
+   constructor(props) {
+      super(props);
+
+      this.state = {
+         data: 0
+      }
+
+      this.setNewNumber = this.setNewNumber.bind(this)
+   };
+
+   setNewNumber() {
+      this.setState({data: this.state.data + 1})
+   }
+
+   render() {
+      return (
+         <div>
+            <button onClick = {this.setNewNumber}>INCREMENT</button>
+            <Content myNumber = {this.state.data}></Content>
+         </div>
+      );
+   }
+}
+
+class Content extends React.Component {
+
+   componentWillMount() {
+      console.log('Component WILL MOUNT!')
+   }
+
+   componentDidMount() {
+      console.log('Component DID MOUNT!')
+   }
+
+   componentWillReceiveProps(newProps) {    
+      console.log('Component WILL RECIEVE PROPS!')
+   }
+
+   shouldComponentUpdate(newProps, newState) {
+      return true;
+   }
+
+   componentWillUpdate(nextProps, nextState) {
+      console.log('Component WILL UPDATE!');
+   }
+
+   componentDidUpdate(prevProps, prevState) {
+      console.log('Component DID UPDATE!')
+   }
+
+   componentWillUnmount() {
+      console.log('Component WILL UNMOUNT!')
+   }
+
+   render() {
+      return (
+         <div>
+            <h3>{this.props.myNumber}</h3>
+         </div>
+      );
+   }
+}
+
+export default App;
+```
+
+index.js
+
+```JSX
+import React from 'react';
+import ReactDOM from 'react-dom';
+import App from './App.js';
+
+ReactDOM.render(<App/>, document.getElementById('app'));
+
+setTimeout(() => {
+   ReactDOM.unmountComponentAtNode(document.getElementById('app'));}, 10000);
+```
+
+After the initial render, we will get a button which called **increment** and **0** because we have setted the value in the state to **0**.
+
+Only ```componentWillMount``` and ```componentDidMount``` will be logged in console since we didn't update anything yet.
+==> we will see in our console in this order :  ```Component Will Mount!``` then ```Component Did Mount```.<br>
+When we click **INCREMENT** button, the update will occur and other lifecycle methods will be triggered.<br>
+==> we will see in our console in this order :  ```Component Will RECEIVE PROPS!``` then ```Component WILL UPDATE``` then ```Component Did Update!```.<br>
+
+After ten seconds, the component will unmount and the last event will be logged in console.
+==> we will see in our console :  ```Component Will Unmount!``` .<br>
+
 # Router
 
 What are Routers ?
