@@ -13,7 +13,7 @@ This will be organized as following:
 - [Transpiler](#transpiler)
 - [Task runners](#task-runners)
 - [First component](#first-component)
-* [Import&Export](#import&export)
+* [Import and Export](#import-and-export)
 * [Props](#props)
 * [State](#state)
 * [Component LifeCycle](#component-lifecycle)
@@ -239,7 +239,7 @@ export default class MyFirstComponent extends Component{
   }
 }
 ```
-### Import&Export
+### Import and Export
 
 This component can be used wherever we want and whenever we want with a simple import as following :
 
