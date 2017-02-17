@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import logo from '../../logo.svg';
+import prof from '../../prof.jpg'
 import { Link } from 'react-router';
 import './About.css';
 
@@ -12,12 +13,13 @@ export default class About extends Component{
           <h2>About</h2>
         </div>
         <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.<br/>
-          <Link to="/">Home</Link>//
-          <Link to="/About">About</Link>
+          This is an example of a basic react web app with an initiated router.<br/>
+          <Link to="/"><button>Home</button></Link><Link to="/About"><button>About</button></Link>
         </p>
         <p>
-          This is an example of a basic react web app with an initiated router.
+          <img src={prof} alt="ayyoub.oulidi"/><br/>
+          Ayyoub OULIDI<br/>
+          Software engineer and web developer.
         </p>
       </div>
     );

@@ -1,3 +1,8 @@
 /*
 you can implement your own CSS here for the about Route
 */
+button{
+  border-radius: 3px;
+  margin:2px;
+  cursor:pointer;
+}
