@@ -357,25 +357,22 @@ App.js
 import React from 'react';
 
 class App extends React.Component {
-
-   constructor(props) {
-      super(props);
-
+   constructor() {
+      super();
       this.state = {
          data: 0
       }
-
-      this.setNewNumber = this.setNewNumber.bind(this)
    };
 
    setNewNumber() {
-      this.setState({data: this.state.data + 1})
+      this.state.data++
+      this.setState(this.state)
    }
 
    render() {
       return (
          <div>
-            <button onClick = {this.setNewNumber}>INCREMENT</button>
+            <button onClick = {this.setNewNumber.bind(this)}>INCREMENT</button>
             <Content myNumber = {this.state.data}></Content>
          </div>
       );
