@@ -321,10 +321,10 @@ So each click will re-render the the component and we will see something like :
 ```
 ...
 
+_PS: You should keep in mind that setState is asynchronous and if you do not use it as it should that can give you some weird behaviors :)_
+
 ### Component LifeCycle
 Component LifeCycle is the component lifecyle. Wow, Very clear I know :).
-
-
 
 # Router
 
