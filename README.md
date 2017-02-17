@@ -328,7 +328,75 @@ Component LifeCycle is the component lifecyle. Wow, Very clear I know :).
 
 # Router
 
-On going....
+What are Routers ?
+In a SPA (Single Page Application) we need to redirect the user on a route (About, Profile, Settings, Home,..) that are seen by the user as different pages. From the developper' point of view, they are the same page, it is only the root component that change according to the router.
+
+In react, to work with routers, we need a react module ```react-router``` which should be installed and "configured" (it is not really a configuration) but there are specific steps that should be done.
+
+To install react router it is too simple :
+
+```
+  npm install --save react-router
+```
+To add routers to your project, you can start with a file where you will define all your routes as following :
+
+```JSX
+import React from 'react';
+import { Router, Route } from 'react-router';
+
+import App from './App';
+import About from './components/About/About';
+import NotFound from './components/NotFound/NotFound';
+
+const Routes = (props) => (
+  <Router {...props}>
+    <Route path="/" component={App} />
+    <Route path="/about" component={About} />
+    <Route path="*" component={NotFound} />
+  </Router>
+);
+
+export default Routes;
+```
+I will explain do not worry :)
+
+We have installed **react-router** and our routes are OF COURSE nothing but other components :) (Everything in react is a component).<br>
+Each route is considered as a parent component (that can contains other components) .
+
+We should import them and use them in our Route components as :
+```JSX
+<Route path="/" component={App} />
+```
+
+The ```path``` prop is what is add to the URL and what we can call to redirect the page to what we want.<br>
+The ```component``` prop is the component that will be displayed once we have been redirected to the specific route.
+
+Once the ```Routes.js``` is created; We should call this component in our Entry Point ```index.js```.
+
+```JSX
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { browserHistory } from 'react-router';
+
+import Routes from './routes';
+
+ReactDOM.render(
+  <Routes history={browserHistory} />,
+  document.getElementById('root')
+);
+```
+Sure you are wondering how can we call a specific route from a component ? Well it is easy :).<br>
+You need to import a specific component from reat-router.
+```JSX
+ import {Link} from 'react-router'
+```
+And you can use that in your component to call a specific route as following:
+```JSX
+ <Link to="/_The_Name_Of_Your_Route"></Link>
+```
+In my example I have created three routes ```/About```,```/``` and if it is something different that those two it will return my Undefined Page; That is the meaning of ```/*```.
+
+I think that's all what you should know aboutn **routers** :)
 
 # What's next
 
