@@ -283,14 +283,14 @@ Here is an example on how we add a state to a component.
 ```JSX
 export default class MyFirstComponent extends Component{
   constructor(){
-    super(this);
+    super()
     this.state={
       clickNumber : 0
     }
   }
 
   divClicked(){
-    this.state.clickNumber = this.state.clickNumber+1;
+    this.state.clickNumber++
     setState(this.state)
   }
 
