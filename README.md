@@ -93,7 +93,7 @@ For more details about how React build their Virtual DOM I recommend this Articl
 # Init a new project
 
 Hallelujah!<br>
-We donnot need to configure everything with react anymore. The **Create React App** is the solution.
+We do not need to configure everything with react anymore. The **Create React App** is the solution.
 
 Create React App is divided into two packages:
 
@@ -134,6 +134,15 @@ my-app/
     index.js
     logo.svg
 ```
+Let us explain what does each folder/file stand for.
+- node_modules
+It is here where all project dependencies are installed.
+- package.json
+It is the file that contain all our basic conf and the dependencies that ```npm install``` will run and install in our node_modules.
+- public
+It is the folder where we have all our public elements needed by the App (images,favicon...) and the index.html which is our Entry Point.
+- src
+It is the folder where we can edit and add files/folders to our source code.
 
 ### _Available Scripts_
 
@@ -263,10 +272,59 @@ export default class MyFirstComponent extends Component{
 }
 ```
 ### State
-On going....
+For Data that won't be changed, we use always ```props``` as passing parameters to children components. Those are data that are fixed throughout the lifetime of a component.
+But, for data that is going to change, we have to use ```state```.
+
+**State** is an object that contains all our data that will change throughout the LifeCycle of the component.
+
+Here is an example on how we add a state to a component.
+(let's imagine that we'll a variable that will calculate the number of clicks on the div)
+
+```JSX
+export default class MyFirstComponent extends Component{
+  constructor(){
+    super(this);
+    this.state={
+      clickNumber : 0
+    }
+  }
+
+  divClicked(){
+    this.state.clickNumber = this.state.clickNumber+1;
+    setState(this.state)
+  }
+
+  render(){
+    return(
+      <div onClick={this.divClicked.bind(this)}>
+        This is my first component.
+        Clicked {this.state.clickNumber} time
+      </div>
+  );
+  }
+}
+```
+Let's explain this code.
+We have the state of _clickNumber_ initiated to 0; So once the component is mounted, it will display something like :
+
+```
+        This is my first component.
+        Clicked 0 time
+```
+We added an mouse click on the div. That means each time we click on our div, it will execute the function ```divClicked```. The execution will update the state of our component to 1,2,3... each click.
+What is particular in the React and the State is that the change of the state means re-execute the render method.
+So each click will re-render the the component and we will see something like :
+
+```
+        This is my first component.
+        Clicked 1 time
+```
+...
 
 ### Component LifeCycle
-On going....
+Component LifeCycle is the component lifecyle. Wow, Very clear I know :).
+
+
 
 # Router
 
